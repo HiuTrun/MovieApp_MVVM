@@ -8,8 +8,8 @@ import java.io.Serializable
 data class Movie(
     val adult: Boolean,
     val backdrop_path: String,
-    val genre_ids: List<Int>,
-    @PrimaryKey()
+    val genre_ids: GenreIds,
+    @PrimaryKey
     val id: Int,
     val original_language: String,
     val original_title: String,
